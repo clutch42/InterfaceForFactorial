@@ -31,4 +31,5 @@ def run_executable():
 
 
 if __name__ == '__main__':
-    serve(app, host='0.0.0.0', port=8080)  # Use Waitress to serve the app
+    port = int(os.getenv('PORT', 8080))  # Use environment variable PORT or default to 8080
+    serve(app, host='0.0.0.0', port=port)  # Use Waitress to serve the app
