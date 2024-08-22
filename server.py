@@ -5,7 +5,7 @@ from waitress import serve
 
 app = Flask(__name__)
 
-EXECUTABLE_PATH = os.path.join(os.path.dirname(__file__), 'bin', 'Factor_and_Simplify_SquareRoot.exe')
+EXECUTABLE_PATH = os.path.join(os.path.dirname(__file__), 'bin', 'Factor_and_Simplify_SquareRoot')
 
 
 @app.route('/')
